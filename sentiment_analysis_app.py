@@ -39,6 +39,30 @@ if st.button("Predict"):
     if user_text:
         with st.spinner("Analyzing..."):
             results = predict_sentiment(user_text)
-            st.write(results)
+            
+            # --- NEW UI CODE STARTS HERE ---
+            
+            # 1. Find the sentiment with the highest score
+            top_sentiment = max(results, key=results.get)
+            
+            # 2. Display the main verdict clearly
+            st.subheader(f"Prediction: {top_sentiment}")
+            st.divider() # Adds a nice horizontal line
+            
+            # 3. Create visual bars for the breakdown
+            st.write("**Confidence Breakdown:**")
+            
+            for label, score in results.items():
+                # Convert the 0.8248... number into a clean 82.5% format
+                percentage = f"{score * 100:.1f}%"
+                
+                # Write the label and percentage
+                st.write(f"{label} : {percentage}")
+                
+                # Draw a progress bar representing the probability
+                st.progress(score)
+                
+            # --- NEW UI CODE ENDS HERE ---
+            
     else:
         st.warning("Please enter some text.")
