@@ -22,5 +22,5 @@ If you want to run this project on your own machine, follow these beginner-frien
 1. **Clone the repository:**
    Open your terminal or command prompt and run:
    ```bash
-   git clone [https://github.com/shehabb77/language_sentiment.git](https://github.com/shehabb77/language_sentiment.git)
+   git clone https://languagesentiment-boufskzgfkstfcxntxgrqj.streamlit.app/
    cd language_sentiment
