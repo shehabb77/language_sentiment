@@ -22,5 +22,5 @@ If you want to run this project on your own machine, follow these beginner-frien
 1. **Clone the repository:**
    Open your terminal or command prompt and run:
    ```bash
-   git clone [https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPOSITORY_NAME.git](https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPOSITORY_NAME.git)
-   cd YOUR_REPOSITORY_NAME
+   git clone [https://github.com/shehabb77/language_sentiment.git](https://github.com/shehabb77/language_sentiment.git)
+   cd language_sentiment
